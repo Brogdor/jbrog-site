@@ -10,4 +10,8 @@
     &.size-regular {
         font-size: $fontSize_base;
     }
+
+    &.size-small {
+        font-size: $fontSize_small;
+    }
 }

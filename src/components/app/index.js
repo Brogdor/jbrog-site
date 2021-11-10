@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="app">
         <div className="nav-bar">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
+            <Link to="/" className="nav-link">Home</Link>
+            <Link to="/about" className="nav-link">About</Link>
         </div>
         <div className="body-main">
             <Routes>

@@ -1,6 +1,17 @@
+@import '../../../../client/scss/variables';
+
 .about-page {
     width: 80%;
-    .core-text {
-        margin-bottom: 10px;
+
+    @include desktop {
+        padding-top: 10vh;
+    }
+
+    .core-paragraph {
+        font-size: $fontSize_small;
+
+        @include desktop {
+            font-size: $fontSize_base;
+        }
     }
 }

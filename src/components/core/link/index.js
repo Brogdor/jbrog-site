@@ -1,5 +1,4 @@
 import React from 'react';
-import * as _ from 'lodash';
 import classnames from 'classnames';
 import propTypes from 'prop-types';
 import { Link as RRLink } from 'react-router-dom';
@@ -12,7 +11,7 @@ export function Link(props) {
     const externalLink = props.to.indexOf('/') !== 0;
     const combinedProps = {
         ...props,
-        className: classnames('core-link', props.className, ...buildModifiers(modifierProps, props)),
+        className: classnames(props.className, 'core-link', ...buildModifiers(modifierProps, props)),
         target: externalLink ? '_blank' : null
     };
 

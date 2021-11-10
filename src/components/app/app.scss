@@ -3,24 +3,33 @@
 .app {
     background-color: $gunmetal;
     // text-align: center;
-}
 
-.nav-bar {
-    margin: 0 60px 40px;
-    padding-top: 20px;
-    .core-link:not(:last-child) {
-        margin-right: 40px;
+    .nav-bar {
+        margin: 0 10px 40px;
+        padding-top: 10px;
+
+        @include desktop {
+            margin: 0 60px 40px;
+            padding-top: 20px;
+        }
+
+        .nav-link {
+            font-size: $fontSize_small;
+            margin-right: 16px;
+
+            @include desktop {
+                margin-right: 40px;
+            }
+        }
     }
-}
 
-
-.body-main {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-    padding: 0 10vw;
+    .body-main {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        padding: 0 10vw;
+        text-align: center;
+    }
 }

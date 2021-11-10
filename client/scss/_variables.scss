@@ -1,4 +1,7 @@
+$fontSize_small: 1.5rem;
+
 $fontSize_base: 2rem;
+$fontSize_large: 3rem;
 
 // Background
 $gunmetal: #282C34;
@@ -11,3 +14,16 @@ $ming: #407076;
 
 $primaryTextColor: $pale-silver;
 $primaryLinkColor: $morning-blue;
+
+
+@mixin phablet {
+    @media only print, screen and (min-width : 375px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only print, screen and (min-width : 1024px) {
+        @content;
+    }
+}
