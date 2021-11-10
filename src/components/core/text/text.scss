@@ -1,0 +1,13 @@
+@import '../../../../client/scss/variables';
+
+.core-text {
+    display: inline;
+
+    &.display-regular {
+        color: white;
+    }
+
+    &.size-regular {
+        font-size: $fontSize_base;
+    }
+}

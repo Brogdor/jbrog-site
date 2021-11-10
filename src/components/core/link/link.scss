@@ -1,0 +1,21 @@
+@import '../../../../client/scss/variables';
+
+.core-link {
+    display: inline;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &.color-regular {
+        color: $primaryLinkColor;
+    }
+
+    &.display-regular {
+        text-decoration: none;
+    }
+
+    &.size-regular {
+        font-size: $fontSize_base;
+    }
+}

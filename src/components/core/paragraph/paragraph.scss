@@ -1,0 +1,7 @@
+@import '../../../../client/scss/variables';
+
+.core-paragraph {
+    &.size-regular {
+        font-size: $fontSize_base;
+    }
+}
