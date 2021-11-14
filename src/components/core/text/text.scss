@@ -2,16 +2,6 @@
 
 .core-text {
     display: inline;
-
-    &.display-regular {
-        color: white;
-    }
-
-    &.size-regular {
-        font-size: $fontSize_base;
-    }
-
-    &.size-small {
-        font-size: $fontSize_small;
-    }
+    color: white;
+    font-size: $fontSize_base;
 }

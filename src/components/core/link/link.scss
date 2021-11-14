@@ -2,20 +2,11 @@
 
 .core-link {
     display: inline;
+    color: $primaryLinkColor;
+    text-decoration: none;
+    font-size: $fontSize_base;
 
     &:hover {
         text-decoration: underline;
-    }
-
-    &.color-regular {
-        color: $primaryLinkColor;
-    }
-
-    &.display-regular {
-        text-decoration: none;
-    }
-
-    &.size-regular {
-        font-size: $fontSize_base;
     }
 }
